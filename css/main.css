@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Resetting default browser styles */
 html,
 body {
@@ -72,7 +73,7 @@ body {
 }
 
 /* Repository item styles */
-.container {
+.containerrepos {
   overflow-x: auto;
   white-space: nowrap;
 }
@@ -112,45 +113,6 @@ body {
   text-decoration: underline;
 }
 
-/* Title styles */
-.title {
-  display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  height: 100px; /* Set the height of the title container */
-}
-
-.title h1 {
-  font-size: 24px; /* Initial font size */
-  margin: 0; /* Remove default margin */
-  overflow: hidden; /* Hide overflow to create typewriter effect */
-  white-space: nowrap; /* Prevent wrapping */
-  border-right: 0.15em solid orange; /* Add typewriter cursor */
-  animation: typing 5s steps(55, end) infinite,
-    /* Adjust animation duration */ blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-@media (min-width: 576px) {
-  .title h1 {
-    font-size: 36px; /* Increase font size for larger screens */
-  }
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
 }
