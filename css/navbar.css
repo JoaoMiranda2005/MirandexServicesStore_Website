@@ -1,0 +1,13 @@
+/* Navbar styles */
+.navbar {
+  background-color: #f0f0f0; /* Background color */
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+.nav-link:hover {
+  background-color: orange;
+  transition: 0.4s ease-in;
+}
