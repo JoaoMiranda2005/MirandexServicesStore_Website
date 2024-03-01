@@ -116,3 +116,81 @@ body {
 h1,h2,h3,h4,h5,h6{
   font-family: 'Roboto', sans-serif;
 }
+
+.servicos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.intservicos {
+  width: 350px;
+  margin: 0 10px 20px; /* Adjust margins */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicos {
+  width: 350px;
+  margin: 0 10px 20px; /* Adjust margins */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .servicos {
+    width: calc(50% - 20px); /* Two items per row */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .servicos {
+    width: calc(100% - 20px); /* Single column layout */
+  }
+}
+
+.intservicos {
+  flex: 1 1 20%; /* Adjust flex-basis to control the width of each item */
+  margin: 10px;
+}
+.intservicos h2 {
+  color: #333;
+}
+.intservicos p {
+  color: #666;
+}
+.intservicos a {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.intservicos a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .servicos {
+      flex-wrap: wrap;
+  }
+  .intservicos {
+      flex: 1 1 100%; /* Each item takes full width on smaller screens */
+  }
+}
+
+.servicos-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.servicos-title h1 {
+  font-size: 24px;
+  color: #333;
+}
