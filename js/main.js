@@ -23,4 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 var currentYear = new Date().getFullYear();
-  document.getElementById("currentYear").textContent = currentYear;
+document.getElementById("currentYear").textContent = currentYear;
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

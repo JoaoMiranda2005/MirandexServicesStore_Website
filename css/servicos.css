@@ -45,12 +45,6 @@
   background-color: orange;
   transition: 0.4s ease-in;
 }
-.intservicos h2 {
-  color: #333;
-}
-.intservicos p {
-  color: #666;
-}
 .intservicos a {
   color: #000000;
   text-decoration: none;
@@ -74,5 +68,4 @@
 
 .servicos-title h1 {
   font-size: 24px;
-  color: #333;
 }
